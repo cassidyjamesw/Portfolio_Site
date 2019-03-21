@@ -225,6 +225,17 @@ pre {
 
 /* Section/Article */
 
+psec {
+  &.portfolioSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .portfolioCard {
+    height: 20px;
+  }
+}
+
 section,
 article {
   &.special {

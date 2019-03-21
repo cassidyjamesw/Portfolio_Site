@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
-import Gallery2 from '../components/Gallery2'
+import PortfolioCard from '../components/PortfolioCard'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
@@ -13,63 +13,11 @@ import thumb04 from '../assets/images/thumbs/04.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
-
-const DEFAULT_IMAGES = [
-  {
-    id: '1',
-    src: full01,
-    thumbnail: thumb01,
-    caption: 'www.Movebytes.com',
-    description: 'File sharing site built with React, Node, and AWS.',
-    git: 'www.google.com',
-  },
-  {
-    id: '2',
-    src: full02,
-    thumbnail: thumb02,
-    caption: 'Photo 2',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    git: 'www.google.com',
-  },
-  {
-    id: '3',
-    src: full03,
-    thumbnail: thumb03,
-    caption: 'Photo 3',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    git: 'www.google.com',
-  },
-  {
-    id: '4',
-    src: full04,
-    thumbnail: thumb04,
-    caption: 'Photo 4',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    git: 'www.google.com',
-  },
-  {
-    id: '5',
-    src: full05,
-    thumbnail: thumb05,
-    caption: 'Photo 5',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    git: 'www.google.com',
-  },
-  {
-    id: '6',
-    src: full06,
-    thumbnail: thumb06,
-    caption: 'Photo 6',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    git: 'www.google.com',
-  },
-]
+import proj01 from '../assets/images/projectimg/movebytes.png'
+import proj02 from '../assets/images/projectimg/githubbattle.png'
+import proj03 from '../assets/images/projectimg/Notes.png'
+import proj04 from '../assets/images/projectimg/goggins.png'
+import proj05 from '../assets/images/projectimg/eda.png'
 
 class HomeIndex extends React.Component {
   constructor() {
@@ -139,26 +87,55 @@ class HomeIndex extends React.Component {
 
           <section id="two">
             <h2>Recent Work</h2>
+            <psec className="portfolioSection">
+              <PortfolioCard
+                title={'www.Movebytes.com'}
+                description={
+                  'File sharing site built with React, Node, and AWS.'
+                }
+                hostedSite={'https://www.movebytes.com/'}
+                gitURL={
+                  'https://github.com/Lambda-School-Labs/labs10-big-files'
+                }
+                projthumb={proj01}
+              />
 
-            <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ id, src, thumbnail, caption, description, git }) => ({
-                  src,
-                  thumbnail,
-                  caption,
-                  description,
-                  git,
-                })
-              )}
-            />
+              <PortfolioCard
+                title={'Github Battle'}
+                description={
+                  'File sharing site built with React, Node, and AWS.'
+                }
+                hostedSite={'https://github-battle-86428.firebaseapp.com/'}
+                gitURL={'https://github.com/cassidyjamesw/githubbattle'}
+                projthumb={proj02}
+              />
 
-            <ul className="actions">
-              <li>
-                <a href="https://github.com/cassidyjamesw" className="button">
-                  My Github
-                </a>
-              </li>
-            </ul>
+              <PortfolioCard
+                title={'Note App'}
+                description={
+                  'Evernote Clone built with React, Node, and Heroku'
+                }
+                hostedSite={'https://cassidy-backendprojectweek.netlify.com/'}
+                gitURL={'https://github.com/cassidyjamesw/front-end-BEPW'}
+                projthumb={proj03}
+              />
+
+              <PortfolioCard
+                title={'Twitter Bot'}
+                description={'Twitter Quote Bot built with python'}
+                hostedSite={'https://twitter.com/QuotesGoggins'}
+                gitURL={'https://github.com/cassidyjamesw/quotebot'}
+                projthumb={proj04}
+              />
+
+              <PortfolioCard
+                title={'NYC Rental Listing Data EDA'}
+                description={'Exploratory Data Analysis on NYC rental data'}
+                hostedSite={'https://github.com/cassidyjamesw/Project'}
+                gitURL={'https://github.com/cassidyjamesw/Project'}
+                projthumb={proj05}
+              />
+            </psec>
           </section>
 
           <section id="three">
