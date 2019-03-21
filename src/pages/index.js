@@ -80,7 +80,7 @@ class HomeIndex extends React.Component {
             <h2>Recent Work</h2>
             <psec className="portfolioSection">
               <PortfolioCard
-                title={'www.Movebytes.com'}
+                title={'Movebytes'}
                 description={
                   'File sharing site built with React, Node, and AWS.'
                 }
