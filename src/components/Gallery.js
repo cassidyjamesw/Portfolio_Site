@@ -41,6 +41,7 @@ class Gallery extends Component {
       currentImage: this.state.currentImage + 1,
     })
   }
+
   gotoImage(index) {
     this.setState({
       currentImage: index,

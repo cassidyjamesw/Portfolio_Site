@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
+import Gallery2 from '../components/Gallery2'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
@@ -24,8 +25,9 @@ const DEFAULT_IMAGES = [
     id: '1',
     src: full01,
     thumbnail: thumb01,
-    caption: 'Photo 1',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'www.Movebytes.com',
+    description: 'File sharing site built with React, Node, and AWS.',
+    git: 'www.google.com',
   },
   {
     id: '2',
@@ -33,6 +35,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb02,
     caption: 'Photo 2',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    git: 'www.google.com',
   },
   {
     id: '3',
@@ -40,6 +43,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb03,
     caption: 'Photo 3',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    git: 'www.google.com',
   },
   {
     id: '4',
@@ -47,6 +51,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb04,
     caption: 'Photo 4',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    git: 'www.google.com',
   },
   {
     id: '5',
@@ -54,6 +59,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb05,
     caption: 'Photo 5',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    git: 'www.google.com',
   },
   {
     id: '6',
@@ -61,6 +67,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb06,
     caption: 'Photo 6',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    git: 'www.google.com',
   },
 ]
 
@@ -105,13 +112,12 @@ class HomeIndex extends React.Component {
   }
   handleClickImage() {
     if (this.state.currentImage === this.props.images.length - 1) return
-
     this.gotoNext()
   }
 
   render() {
-    const siteTitle = 'Gatsby Starter - Strata'
-    const siteDescription = 'Site description'
+    const siteTitle = 'CassidyJamesW'
+    const siteDescription = 'Portfolio Site'
 
     return (
       <Layout>
@@ -123,9 +129,9 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>Aspiring Software Engineer</h2>
+              <h2>Enthusiastic Full Stack Developer</h2>
             </header>
-            <p>
+            <p className="skills">
               Skills in Javascript, Python, HTML/CSS, React, Redux, Node,
               Express, Django, AWS
             </p>
@@ -136,19 +142,20 @@ class HomeIndex extends React.Component {
 
             <Gallery
               images={DEFAULT_IMAGES.map(
-                ({ id, src, thumbnail, caption, description }) => ({
+                ({ id, src, thumbnail, caption, description, git }) => ({
                   src,
                   thumbnail,
                   caption,
                   description,
+                  git,
                 })
               )}
             />
 
             <ul className="actions">
               <li>
-                <a href="#" className="button">
-                  Full Portfolio
+                <a href="https://github.com/cassidyjamesw" className="button">
+                  My Github
                 </a>
               </li>
             </ul>
@@ -156,11 +163,7 @@ class HomeIndex extends React.Component {
 
           <section id="three">
             <h2>Get In Touch</h2>
-            <p>
-              Accumsan pellentesque commodo blandit enim arcu non at amet id
-              arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-              lorem vulputate lorem neque lorem ipsum dolor.
-            </p>
+
             <div className="row">
               <div className="8u 12u$(small)">
                 <form method="post" action="#">
@@ -203,23 +206,18 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-home">
                       <span className="label">Address</span>
                     </h3>
-                    1234 Somewhere Rd.
-                    <br />
-                    Nashville, TN 00000
+                    Brooklyn, NY 11249
                     <br />
                     United States
                   </li>
-                  <li>
-                    <h3 className="icon fa-mobile">
-                      <span className="label">Phone</span>
-                    </h3>
-                    000-000-0000
-                  </li>
+
                   <li>
                     <h3 className="icon fa-envelope-o">
                       <span className="label">Email</span>
                     </h3>
-                    <a href="#">hello@untitled.tld</a>
+                    <a href="mailto:cassidyjamesw@gmail.com">
+                      cassidyjamesw@gmail.com
+                    </a>
                   </li>
                 </ul>
               </div>
