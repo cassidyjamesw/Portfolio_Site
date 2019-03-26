@@ -3,6 +3,15 @@ import Link from 'gatsby-link'
 
 const BlogPage = ({ data }) => (
   <div>
+    <section id="one">
+      <header className="major">
+        <h2>Enthusiastic Full Stack Developer</h2>
+      </header>
+      <p className="skills">
+        Skills in Javascript, Python, HTML/CSS, React, Redux, Node, Express,
+        Django, AWS
+      </p>
+    </section>
     <h1>Latest Posts</h1>
     {data.allMarkdownRemark.edges.map(post => (
       <div key={post.node.id}>

@@ -20,6 +20,8 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-images": "^0.5.19",
+    "typography": "^0.16.19",
+    "typography-theme-wordpress-2016": "^0.16.19",
     "webpack": "^4.29.6"
   },
   "keywords": [

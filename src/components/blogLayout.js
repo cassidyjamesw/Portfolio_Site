@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { rhythm, scale } from '../utils/typography'
 
 export default function BlogTemplate({ data }) {
   const post = data.markdownRemark
@@ -8,6 +9,7 @@ export default function BlogTemplate({ data }) {
     <div>
       <Link to="/blog">Go Back</Link>
       <hr />
+
       <h1>{post.frontmatter.title}</h1>
       <h4>
         Posted by {post.frontmatter.author} on {post.frontmatter.date}
