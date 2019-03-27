@@ -31,6 +31,9 @@ class HomeIndex extends React.Component {
               Skills in Javascript, Python, HTML/CSS, React, Redux, Node,
               Express, Django, AWS
             </p>
+            <p>
+              <a href="#three">Contact</a>
+            </p>
           </section>
 
           <section id="two">
