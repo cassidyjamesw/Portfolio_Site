@@ -20,6 +20,8 @@ module.exports = {
         plugins: [],
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -41,6 +43,14 @@ module.exports = {
         name: 'pages',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
+
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
