@@ -80,14 +80,14 @@ class HomeIndex extends React.Component {
                 gitURL={'https://github.com/cassidyjamesw/quotebot'}
                 projthumb={proj04}
               />
-
+              {/* 
               <PortfolioCard
                 title={'NYC Rental Listing Data EDA'}
                 description={'Exploratory Data Analysis on NYC rental data'}
                 hostedSite={'https://github.com/cassidyjamesw/Project'}
                 gitURL={'https://github.com/cassidyjamesw/Project'}
                 projthumb={proj05}
-              />
+              /> */}
             </psec>
           </section>
 
