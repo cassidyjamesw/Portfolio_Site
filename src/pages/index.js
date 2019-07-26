@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import RecentWork from '../components/RecentWork'
 import GetInTouch from '../components/GetInTouch'
-import blankSpace from '../components/blankSpace'
 
 class HomeIndex extends React.Component {
   render() {
@@ -34,10 +33,6 @@ class HomeIndex extends React.Component {
 
           <section id="three">
             <GetInTouch />
-          </section>
-
-          <section>
-            <blankSpace />
           </section>
         </div>
       </Layout>
