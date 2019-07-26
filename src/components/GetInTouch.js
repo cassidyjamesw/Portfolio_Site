@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './Footer'
 
 class GetInTouch extends React.Component {
   render() {
