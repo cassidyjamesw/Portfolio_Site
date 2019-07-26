@@ -26,7 +26,6 @@ class GetInTouch extends React.Component {
             </li>
           </ul>
         </div>
-        <Footer />
       </div>
     )
   }
