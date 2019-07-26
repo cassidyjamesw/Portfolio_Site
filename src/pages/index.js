@@ -89,6 +89,16 @@ class HomeIndex extends React.Component {
                 gitURL={'https://github.com/cassidyjamesw/Project'}
                 projthumb={proj05}
               />
+
+              <PortfolioCard
+                title={'NYC Rental Listing Data EDA'}
+                description={
+                  'Cleaned NYC Rental Listing Data and visualized relationship between rental price vs proximity to Subways.'
+                }
+                hostedSite={'https://github.com/cassidyjamesw/Project'}
+                gitURL={'https://github.com/cassidyjamesw/Project'}
+                projthumb={proj05}
+              />
             </psec>
           </section>
 
