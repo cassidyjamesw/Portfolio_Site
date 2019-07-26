@@ -92,69 +92,29 @@ class HomeIndex extends React.Component {
             </psec>
           </section>
 
-          {/* <section id="three">
+          <section id="three">
             <h2>Get In Touch</h2>
-
-            <div className="row">
-              <div className="8u 12u$(small)">
-                <form method="post" action="mailto:cassidyjamesw@gmail.com">
-                  <div className="row uniform 50%">
-                    <div className="6u 12u$(xsmall)">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div className="6u 12u$(xsmall)">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div className="12u">
-                      <textarea
-                        name="message"
-                        id="message"
-                        placeholder="Message"
-                        rows="4"
-                      />
-                    </div>
-                  </div>
-                  <ul className="actions">
-                    <li>
-                      <br />
-                      <input type="submit" value="Send Message" />
-                    </li>
-                  </ul>
-                </form>
-              </div>
-              <div className="4u 12u$(small)">
-                <ul className="labeled-icons">
-                  <li>
-                    <h3 className="icon fa-home">
-                      <span className="label">Address</span>
-                    </h3>
-                    Brooklyn, NY 11249
-                    <br />
-                    United States
-                  </li>
-
-                  <li>
-                    <h3 className="icon fa-envelope-o">
-                      <span className="label">Email</span>
-                    </h3>
-                    <a href="mailto:cassidyjamesw@gmail.com">
-                      cassidyjamesw@gmail.com
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div className="4u 12u$(small)">
+              <ul className="labeled-icons">
+                <li>
+                  <h3 className="icon fa-home">
+                    <span className="label">Address</span>
+                  </h3>
+                  Brooklyn, NY 11249
+                  <br />
+                  United States
+                </li>
+                <li>
+                  <h3 className="icon fa-envelope-o">
+                    <span className="label">Email</span>
+                  </h3>
+                  <a href="mailto:cassidyjamesw@gmail.com">
+                    cassidyjamesw@gmail.com
+                  </a>
+                </li>
+              </ul>
             </div>
-          </section> */}
+          </section>
         </div>
       </Layout>
     )
