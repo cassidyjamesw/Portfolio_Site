@@ -34,6 +34,7 @@ class HomeIndex extends React.Component {
           <section id="three">
             <GetInTouch />
           </section>
+          <section />
         </div>
       </Layout>
     )
