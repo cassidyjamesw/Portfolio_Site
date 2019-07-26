@@ -31,9 +31,9 @@ class HomeIndex extends React.Component {
             <RecentWork />
           </section>
 
-          <article id="three">
+          <div id="three">
             <GetInTouch />
-          </article>
+          </div>
         </div>
       </Layout>
     )
