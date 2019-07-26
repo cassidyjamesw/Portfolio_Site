@@ -31,10 +31,7 @@ class HomeIndex extends React.Component {
             </header>
             <p className="skills">
               Skills in Javascript, Python, HTML/CSS, React, Redux, Node,
-              Express, Django, AWS
-            </p>
-            <p>
-              <a href="#three">Contact</a>
+              Express, AWS S3
             </p>
           </section>
 
@@ -44,7 +41,7 @@ class HomeIndex extends React.Component {
               <PortfolioCard
                 title={'Movebytes'}
                 description={
-                  'File sharing site built with React, Node, and AWS.'
+                  'File Transfer app. Built with React and Node, hosted on AWS.'
                 }
                 hostedSite={'https://www.movebytes.com/'}
                 gitURL={
@@ -56,7 +53,7 @@ class HomeIndex extends React.Component {
               <PortfolioCard
                 title={'Github Battle'}
                 description={
-                  'File sharing site built with React, Node, and AWS.'
+                  'React App that pulls data from the Github API to achieve multiple actions like Github Users Battle, Most Popular Repos and User Info'
                 }
                 hostedSite={'https://github-battle-86428.firebaseapp.com/'}
                 gitURL={'https://github.com/cassidyjamesw/githubbattle'}
@@ -66,7 +63,7 @@ class HomeIndex extends React.Component {
               <PortfolioCard
                 title={'Note App'}
                 description={
-                  'Evernote Clone built with React, Node, and Heroku'
+                  'Note Taking App built with React and Node, hosted on Heroku.'
                 }
                 hostedSite={'https://cassidy-backendprojectweek.netlify.com/'}
                 gitURL={'https://github.com/cassidyjamesw/front-end-BEPW'}
@@ -75,23 +72,27 @@ class HomeIndex extends React.Component {
 
               <PortfolioCard
                 title={'Twitter Bot'}
-                description={'Twitter Quote Bot built with python'}
+                description={
+                  'Twitter Bot that cycles through David Goggins Quotes. Built with Python.'
+                }
                 hostedSite={'https://twitter.com/QuotesGoggins'}
                 gitURL={'https://github.com/cassidyjamesw/quotebot'}
                 projthumb={proj04}
               />
-              {/* 
+
               <PortfolioCard
                 title={'NYC Rental Listing Data EDA'}
-                description={'Exploratory Data Analysis on NYC rental data'}
+                description={
+                  'Cleaned NYC Rental Listing Data and visualized relationship between rental price vs proximity to Subways.'
+                }
                 hostedSite={'https://github.com/cassidyjamesw/Project'}
                 gitURL={'https://github.com/cassidyjamesw/Project'}
                 projthumb={proj05}
-              /> */}
+              />
             </psec>
           </section>
 
-          <section id="three">
+          {/* <section id="three">
             <h2>Get In Touch</h2>
 
             <div className="row">
@@ -153,7 +154,7 @@ class HomeIndex extends React.Component {
                 </ul>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </Layout>
     )

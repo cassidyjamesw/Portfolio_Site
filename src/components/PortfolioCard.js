@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography'
 
 const styles = theme => ({
   card: {
-    maxWidth: 400,
+    maxWidth: 500,
   },
   media: {
     height: 0,
@@ -34,13 +34,13 @@ const styles = theme => ({
 var cardStyle = {
   display: 'block',
   width: '30vw',
-  height: '28vw',
-  marginBottom: '2vw',
+  height: 'auto',
+  marginBottom: '5vw',
 }
 
 var mediaStyle = {
   width: '30vw',
-  height: '0vw',
+  height: '0vh',
 }
 
 class PortfolioCard extends React.Component {
